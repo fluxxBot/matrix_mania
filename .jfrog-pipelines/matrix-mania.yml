@@ -38,4 +38,10 @@ pipelines:
             
         execution:
           onExecute:
-            - echo "Executing matrix step on ${steplet_id}"
+            - git clone https://github.com/movie-web/movie-web.git
+            - cd movie-web
+            - pwd
+            - npm i -g pnpm
+            - pnpm i
+            - pnpm build
+            - pnpm lint
