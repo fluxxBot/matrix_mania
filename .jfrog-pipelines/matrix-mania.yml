@@ -31,10 +31,11 @@ pipelines:
             - count: 17
             - count: 18
             - count: 19
-            - count: 20
+            - count: 21
+            - count: 22
+            - count: 23
+            - count: 24
             
         execution:
           onExecute:
             - echo "Executing matrix step on ${steplet_id}"
-            - for i in {1..10000000}; do echo "hellohellohellohellohellohellohellohellohellohellohello" >> log.txt; done
-            - cat log.txt
