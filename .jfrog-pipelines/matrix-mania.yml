@@ -4,6 +4,13 @@ pipelines:
       - name: Johny_Stepp
         type: Matrix
         stepletMultipliers:
+          runtimes:
+            - type: image
+              image:
+                auto:
+                  language: node
+                  versions:
+                    - "14.19.1"
           environmentVariables:
             - count: 1
             - count: 2
@@ -144,6 +151,7 @@ pipelines:
             - count: 137
             - count: 138
             - count: 139
+            
         execution:
           onExecute:
             - echo "Executing matrix step on ${steplet_id}"
