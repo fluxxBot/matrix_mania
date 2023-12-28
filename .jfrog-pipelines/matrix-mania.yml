@@ -3,6 +3,8 @@ pipelines:
     steps:
       - name: Johny_Stepp
         type: Matrix
+        configuration:
+          multiNode: true
         stepletMultipliers:
           runtimes:
             - type: image
