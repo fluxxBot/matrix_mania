@@ -10,7 +10,7 @@ pipelines:
                 auto:
                   language: node
                   versions:
-                    - "14.19.1"
+                    - "16.14.1"
           environmentVariables:
             - count: 1
             - count: 2
